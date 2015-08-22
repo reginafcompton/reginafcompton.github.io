@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+  <title>Your page title here</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<main>
+  <h1>Github, Git commands, and the Happiest Place in the World</h1>
+  <h4>August 22, 2015</h4>
+  <section>
+    <p>Github, to the new user, seems just shy of witchcraft. It is pure, terrifying, beautiful magic. Still, the enchanting world of Github can seem less like Walt Disney's fairy-tale land and more like Banksy's <a href="http://www.theguardian.com/artanddesign/2015/aug/20/banksy-dismaland-amusements-anarchism-weston-super-mare">Dismal Land</a>. This week, I personally saw the less whimsical side of Github. I know now that certain types of user errors can easily transplant you from Cinderella's castle to the Grim Reaper's dungeon.</p>
+    <p>I begin with some basics. Git and Github help developers manage their work. Simply put, Git – a software – tracks changes made to files on local machines and also remote environments. Developers save, share, modify, and use these files in repositories on the social website Github. Like I said, pure magic.</p>
+    <p>Moving a file from a local computer to Github entails several steps, or Git commands, which can be categorized into two large actions: commit and push/pull. The road to commitment, so to speak, requires at the very least the following commands: $git checkout -b [newbranch] $git status $git add [file name] $git commmit -m "[commit message]." (Read more about these commands <a href="http://readwrite.com/2013/10/02/github-for-beginners-part-2">here</a>.)</p>
+
+    <p>A successful commit in Git is no small task. However, I find that "Pull" and "Push" require even greater focused concentration. After you commit a file, you are ready to "push" it to Github. Before doing so, you must compare your local and remote repositories, checking that they hold the same content. The commands for this process start with <strong>$git checkout master</strong> and <strong>$git pull</strong> (which fetches the changes in your remote repository, i.e., the one on Github, and merges them with your local one). Next, you must return to your [newbranch] and merge it with the master, using the following command: $git merge master. THIS STEP MATTERS, both before and after the push process. It can determine the difference between "happily ever after" and the death of Snow White and six of the seven dwarfs. In merging the master and branch, you insure that the files on your local machine do not disappear, as mine did with my first dozen or so push-pull attempts. Finally, you can push your files to Github with this simple command: $git push origin [newbranch], after which you can visit Github to find your pull request ready for action.</p>
+  </section>
+</main>
