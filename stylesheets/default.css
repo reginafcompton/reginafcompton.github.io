@@ -1,0 +1,126 @@
+header {
+  height: 5.5em;
+  background-color: #33547E;
+}
+
+.logo {
+  float: left;
+  margin-left: .5em;
+  font-family: 'Monsieur La Doulaise', cursive;
+  font-size: 3.5em;
+  color: white;
+}
+.nav {
+  float: right;
+  margin-right: .8em;
+  margin-top: 1em;
+}
+
+header li {
+  display: inline;
+  margin: 0px 15px 0px 15px;
+  padding: 5px;
+  border: .12em solid white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+}
+
+li a {
+  text-decoration: none;
+}
+
+li a:visited {
+  color: white;
+}
+
+li a:hover {
+  color: #94ACCC;
+}
+
+main {
+  clear: both;
+  background-color: #E5E6E7;
+  border: 1px solid #E5E6E7;
+}
+
+.text {
+  margin-right: 16%;
+  margin-left: 16%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  padding: 10px;
+  text-align: justify;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: white;
+  box-shadow: 5px 2px 18px 1px #94ACCC;
+}
+.text h1 {
+  margin-bottom: -.7em;
+  margin-top: -.1em;
+}
+
+.text p {
+  font-size: 1.5em;
+}
+
+.social {
+  height: 5em;
+  background-color: #E5E6E7;
+  text-align: center;
+  padding-bottom: 4em;
+}
+footer {
+  clear: both;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: #92ABCC;
+  border: 1px solid #92ABCC;
+}
+/* dev ideas from normalize.css */
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+footer,
+header,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* dev ideas from J. Ky Marsh */
+
+.debug {
+    border: 1px solid violet;
+}
+
+
+.row {
+    padding: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+}
+
+.span-1 {  width: 8.333%; }
+.span-2 {  width: 16.666%; }
+.span-3 {  width: 25%; }
+.span-4 {  width: 33.333%; }
+.span-5 {  width: 41.666%; }
+.span-6 {  width: 50%; }
+.span-7 {  width: 58.333%; }
+.span-8 {  width: 66.666%; }
+.span-9 {  width: 75%; }
+.span-10 { width: 83.333%; }
+.span-11 { width: 91.666%; }
+.span-12 { width: 100%; }
