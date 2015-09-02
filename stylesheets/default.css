@@ -13,7 +13,7 @@ header {
 .nav {
   float: right;
   margin-right: .8em;
-  margin-top: 1em;
+  margin-top: 1.9em;
 }
 
 header li {
@@ -96,6 +96,7 @@ section {
   display: block;
 }
 
+
 /* dev ideas from J. Ky Marsh */
 
 .debug {
@@ -125,3 +126,11 @@ section {
 .span-10 { width: 83.333%; }
 .span-11 { width: 91.666%; }
 .span-12 { width: 100%; }
+
+ul, ol {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+  }
