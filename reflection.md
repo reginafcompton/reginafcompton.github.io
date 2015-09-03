@@ -9,4 +9,4 @@ A significant part of the development process was crafting the header. I used th
 
 The rest of the site came together without too much struggle or homicidal rage. I learned how to add a "box-shadow," which adds some depth to the page. In addition, I learned to track my reusable classes: the <a> tag appears throughout my site, so I included in the CSS a standard style for this.
 
-View my site <a href="reginafcompton.github.io/index.html">HERE</a>, and view the HTML and CSS files <a href="https://github.com/reginafcompton/reginafcompton.github.io/">HERE</a>.
+View the HTML and CSS files of my site <a href="https://github.com/reginafcompton/reginafcompton.github.io/">HERE</a>.
