@@ -27,23 +27,22 @@ header li {
   color: white;
 }
 
-li a {
+header a {
   text-decoration: none;
+}
+
+header a:visited {
   color: white;
 }
 
-li a:visited {
-  color: white;
-}
-
-li a:hover {
+header a:hover {
   color: #94ACCC;
 }
 
 main {
   clear: both;
-  background-color: #E5E6E7;
-  border: 1px solid #E5E6E7;
+  background-color: #D4D7DA;
+  border: 1px solid #D4D7DA;
 }
 
 .text {
@@ -56,6 +55,7 @@ main {
   font-family: 'Open Sans Condensed', sans-serif;
   background-color: white;
   box-shadow: 5px 2px 18px 1px #94ACCC;
+  color: #333333;
 }
 .text h1 {
   margin-bottom: -.7em;
@@ -66,19 +66,59 @@ main {
   font-size: 1.5em;
 }
 
+hr {
+    display: block;
+    -webkit-margin-before: 1.5em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    border-style: inset;
+    border-width: 1px;
+    box-sizing: border-box;
+}
+
+main ul {
+  padding-top: .5em;
+}
+
+main li {
+  display: inline;
+  padding-right: 2.2em;
+}
+
+
+.portrait {
+  border-radius: 50% 50%;
+  margin-left: 37%;
+}
+
 .social {
   height: 5em;
-  background-color: #E5E6E7;
+  background-color: #D4D7DA;
   text-align: center;
   padding-bottom: 4em;
 }
+
+
 footer {
   clear: both;
   text-align: center;
   font-family: 'Open Sans Condensed', sans-serif;
   background-color: #92ABCC;
   border: 1px solid #92ABCC;
+  color: #333333;
 }
+
+/* reusable code */
+
+a {
+  color: #023F8E;
+  text-decoration: none;
+}
+a:hover {
+  color: #94ACCC;
+}
+
 /* dev ideas from normalize.css */
 
 body {
