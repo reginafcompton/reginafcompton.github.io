@@ -77,15 +77,16 @@ hr {
     box-sizing: border-box;
 }
 
-main ul {
+main nav ul {
   padding-top: .5em;
 }
 
-main li {
+main nav li {
   display: inline-block;
   list-style: none;
   padding-right: 2.2em;
 }
+
 
 .portrait {
   border-radius: 50% 50%;
