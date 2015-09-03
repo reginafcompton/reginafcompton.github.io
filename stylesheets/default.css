@@ -1,5 +1,4 @@
 header {
-  height: 5.5em;
   background-color: #33547E;
 }
 
@@ -17,7 +16,8 @@ header {
 }
 
 header li {
-  display: inline;
+  float: left;
+  list-style: none;
   margin: 0px 15px 0px 15px;
   padding: 5px;
   border: .12em solid white;
@@ -42,7 +42,6 @@ header a:hover {
 main {
   clear: both;
   background-color: #D4D7DA;
-  border: 1px solid #D4D7DA;
 }
 
 .text {
@@ -57,6 +56,7 @@ main {
   box-shadow: 5px 2px 18px 1px #94ACCC;
   color: #333333;
 }
+
 .text h1 {
   margin-bottom: -.7em;
   margin-top: -.1em;
@@ -82,10 +82,10 @@ main ul {
 }
 
 main li {
-  display: inline;
+  display: inline-block;
+  list-style: none;
   padding-right: 2.2em;
 }
-
 
 .portrait {
   border-radius: 50% 50%;
@@ -99,13 +99,11 @@ main li {
   padding-bottom: 4em;
 }
 
-
 footer {
   clear: both;
   text-align: center;
   font-family: 'Open Sans Condensed', sans-serif;
   background-color: #92ABCC;
-  border: 1px solid #92ABCC;
   color: #333333;
 }
 
@@ -125,17 +123,6 @@ body {
   margin: 0;
 }
 
-article,
-aside,
-footer,
-header,
-main,
-menu,
-nav,
-section {
-  display: block;
-}
-
 
 /* dev ideas from J. Ky Marsh */
 
@@ -143,15 +130,12 @@ section {
     border: 1px solid violet;
 }
 
-
 .row {
     padding: 0;
+    margin: 0;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
     display: block;
+    float: left;
 }
 
 .span-1 {  width: 8.333%; }
