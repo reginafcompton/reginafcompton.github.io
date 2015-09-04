@@ -49,7 +49,7 @@ main {
   margin-left: 16%;
   margin-bottom: 2%;
   margin-top: 2%;
-  padding: 10px;
+  padding: 1.5em;
   text-align: justify;
   font-family: 'Open Sans Condensed', sans-serif;
   background-color: white;
@@ -64,6 +64,11 @@ main {
 
 .text p {
   font-size: 1.5em;
+}
+
+.text h4 {
+  font-size: 1em;
+  color: #757575;
 }
 
 hr {
