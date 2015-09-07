@@ -29,9 +29,10 @@
       <p>To write good CSS requires some understanding of Bach, Haydn, and Webern – or, at least, an understanding of motivic economy. HTML gives the website its basic content, and CSS shapes, colors, and brings to life the elements of HTML. CSS and HTML files thus communicate together. An HTML file contains elements...and elements within elements...and elements within elements within elements. An element can indicate a header, a paragraph, a blockquote, and about one hundred other "semantic" things. The CSS file selects these elements and adds style to them.</p>
       <p>In HTML, "class" labels can appear next to elements, e.g., <strong>p class="ex-l"</strong>. The class – a type of CSS selector – prepares the element for styling in CSS: the class can receive several style values, which are then applied to the element itself in the HTML. Several elements can share a class. For instance, all link elements (the "a" tag) and headers (the "h" tags) might share a class of "strong." In the CSS, the "strong" class could receive, let's say, a font-weight of bold: all links and headers on the site would in turn be bolded.</p>
       <p>"ID" labels can also appear next to elements, e.g., <strong>p id="p-xs"</strong>. However, IDs do not function as classes do. An ID is unique; it can only select one element, one time. IDs can be useful, if the site has an element with very specific styling needs (perhaps, a detail in the footer or an aside). Still, an HTML file with an excess of IDs likely has some problems: mainly, the code lacks "motivic economy." A plethora of IDs results in verbose, bombastic, ineloquent CSS files. Whereas, a collection of cleverly organized classes creates intelligible, precise CSS, the kind of CSS that Bach, Haydn, or Webern might write.</p>
-      <h1>Archives</h1>
-      <hr>
+
     <nav>
+      <h1>Archives</h1>
+      <div class="line"></div>
       <ul>
         <li><a href="august-2015.html">August 2015</a></li>
         <li><a href="september-2015.html">September 2015</a></li>
@@ -48,7 +49,7 @@
       <a href="https://www.linkedin.com/pub/regina-compton/33/975/38b" target="_blank"><img src="../imgs/linkedin-128.png"></a>
     </div>
   </main>
-  <footer>
+  <footer class="row">
     <p>Copyright &copy; 2015 Regina Frances Compton</p>
   </footer>
 </body>

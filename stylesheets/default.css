@@ -71,15 +71,8 @@ main {
   color: #757575;
 }
 
-hr {
-    display: block;
-    -webkit-margin-before: 1.5em;
-    -webkit-margin-after: 0em;
-    -webkit-margin-start: auto;
-    -webkit-margin-end: auto;
-    border-style: inset;
-    border-width: 1px;
-    box-sizing: border-box;
+.text nav h1 {
+  margin-bottom: .3em;
 }
 
 main nav ul {
@@ -121,6 +114,24 @@ a {
 }
 a:hover {
   color: #94ACCC;
+}
+
+.line {
+  margin-bottom: .3em;
+  border-bottom: 1px solid grey;
+  display: block;
+}
+
+
+hr {
+    display: block;
+    -webkit-margin-before: 1.5em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    border-style: inset;
+    border-width: 1px;
+    box-sizing: border-box;
 }
 
 /* dev ideas from normalize.css */
