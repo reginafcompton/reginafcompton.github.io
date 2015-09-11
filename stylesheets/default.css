@@ -20,20 +20,20 @@ header li {
   list-style: none;
   margin: 0px 15px 0px 15px;
   padding: 5px;
-  border: .12em solid white;
+  border: .12em solid #FFFFFF;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.2em;
   font-weight: bold;
   color: white;
 }
 
-header a:link {
+header li a:link {
   text-decoration: none;
-  color: white;
+  color: #FFFFFF;
 }
 
 header a:visited {
-  color: white;
+  color: #FFFFFF;
 }
 
 header a:hover {
@@ -53,7 +53,7 @@ main {
   padding: 1.5em;
   text-align: justify;
   font-family: 'Open Sans Condensed', sans-serif;
-  background-color: white;
+  background-color: #FFFFFF;
   box-shadow: 5px 2px 18px 1px #94ACCC;
   color: #333333;
 }
