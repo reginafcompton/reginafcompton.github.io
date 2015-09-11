@@ -27,7 +27,7 @@ header li {
   color: white;
 }
 
-header li a:link {
+header a {
   text-decoration: none;
   color: #FFFFFF;
 }
