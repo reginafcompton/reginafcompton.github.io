@@ -27,8 +27,9 @@ header li {
   color: white;
 }
 
-header a {
+header a:link {
   text-decoration: none;
+  color: white;
 }
 
 header a:visited {
