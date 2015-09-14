@@ -11,15 +11,14 @@ header {
 }
 .nav {
   float: right;
-  margin-right: .8em;
-  margin-top: 1.9em;
+  text-align: center;
 }
 
 header li {
   float: left;
   list-style: none;
-  margin: 0px 15px 0px 15px;
-  padding: 5px;
+  margin: 1.5em .8em 1em .8em;
+  padding: .2em;
   border: .12em solid #FFFFFF;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.2em;
@@ -76,6 +75,10 @@ main {
   margin-bottom: .3em;
 }
 
+main img {
+margin: 0em 2em 0em 2em;
+}
+
 main nav ul {
   padding-top: .5em;
 }
@@ -86,17 +89,27 @@ main nav li {
   padding-right: 2.2em;
 }
 
-
+.img-position {
+  text-align: center;
+}
 .portrait {
   border-radius: 50% 50%;
-  margin-left: 37%;
 }
 
 .social {
   height: 5em;
   background-color: #D4D7DA;
+  padding-bottom: 3em;
+  margin-right: 24%;
+  margin-left: 24%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+.social li {
   text-align: center;
-  padding-bottom: 4em;
+  list-style: none;
+  float: left;
+  margin: .5em .8em .5em .8em;
 }
 
 footer {
@@ -134,6 +147,13 @@ hr {
     border-width: 1px;
     box-sizing: border-box;
 }
+
+pre {
+    background: #f3f3f7;
+    border: 1px solid #dedee3;
+    padding: .5em;
+    font-size: 1.2em;
+  }
 
 /* dev ideas from normalize.css */
 
