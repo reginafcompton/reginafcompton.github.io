@@ -22,13 +22,31 @@
   </header>
   <main class="row">
     <div class="text span-8">
-      <h1>Innumerable<h1>
+      <h1>Nutritious Innumerable Universe<h1>
       <h4>Posted on September 19, 2015</h4>
-      <p>My last post explored the differences and similarities between two types of containers: arrays (lists of objects ordered numerically) and hashes (lists of objects organized into key-value pairs). Hashes and arrays bring order to our disorganized, complex, troubling, exhilarating, confusing, beautiful world. Nonetheless, the full organizational potential of hashes and arrays exists not in the containers themselves, but in the myriad ways we can access and manipulate them.</p>
-      <p>Behold. The innumerable. <em>Innumerable</em>, or the innumerable module, bestows objects with great power. It allows objects to access bundles of methods. These methods depend upon the notion of .each, which helps us iterate over collections by pushing each element into a code block, as in this example:
-        <pre>array.each {|x| puts x }</pre>
+      <p>My last post explored the differences and similarities between two types of containers: arrays (lists of objects ordered numerically) and hashes (lists of objects organized into key-value pairs). Hashes and arrays bring order to our disorganized, complex, troubling, exhilarating, confusing, beautiful universe. Nonetheless, the full organizational potential of hashes and arrays exists not in the containers themselves, but in the myriad ways we can access and manipulate them.</p>
+      <p>Behold. The innumerable. <em>The innumerable</em>, or innumerable module, bestows objects with great power. It allows objects to access bundles of capable methods. These methods depend upon the notion of .each, which iterates over collections by pushing each element into a code block, as in this example that helps to describe the items in my fridge after shopping at the Division Street Farmers' Market:
+        <pre>array = ["green beans", "apple", "pepper", "watermelon"]</pre>
+        <pre>array.each {|x| p "yummy " + x }
+          => yummy green beans
+             yummy apple
+             yummy pepper
+             yummy watermelon</pre>
       </p>
-      <p>Innumerable methods offer more subtle, often more powerful variants of the .each method. .each_with_index</p>
+      <p>Innumerable methods offer more subtle, often more powerful variants of the .each method, for instance: .each_with_index. The .each_with_index method considers each element of an array as well as its index number, as in this example:
+        <pre>array = ["green beans", "apple", "pepper", "watermelon"]</pre>
+        <pre>array.index_with_each {|x, index| p "yummy #{x} @ #{index}" }
+          => "yummy green beans @ 0"
+             "yummy apple @ 1"
+             "yummy pepper @ 2"
+             "yummy watermelon @ 4"</pre>
+      </p>
+      <p>The .each_with_index method, perhaps most compellingly, can help transform an array into a hash, in which the elements of the array appear as the hash keys and the index numbers appear as the hash values:
+        <pre>hash = {}</pre>
+        <pre>array = ["green beans", "apple", "pepper", "watermelon"]</pre>
+        <pre>array.each_with_index {|x, index| hash[x] = index }
+          => { "green beans" => 0,  "apple" => 1, "pepper" => 2, "watermelon" => 3}</pre></p>
+      <p>The .each_with_index method and its cousin innumerables can help create sophisticated programs – programs that can sort vegetables or organize the universe.</p>
 
       <div class="line"></div>
 
@@ -38,7 +56,7 @@
       <p>Arrays and hashes work similarly. They are containers (or lists) for objects. The objects in an array appear between brackets, like so: <pre>dresser_drawers = ["underwear", "bras", "socks and shorts", "leggings"]</pre></p>
       <p>An array organizes its contents in numerical order, starting at zero. In the "dresser_drawers" array, "underwear" sits in the zeroth position, "bras" sit in the first position, and so on. Hashes are also containers that organize lists of objects. Hashes, however, present a slightly more sophisticated if less linear system of order. The objects in a hash appear between two curly brackets, and each object contains two parts – a key and its value, like so: <pre>refrigerator = { "cheese_drawer" => "Parmesan",
         "vegetable_crisper" => "corn",
-        "bottom_shelf" => "milk"
+        "bottom_shelf" => "milk",
         "door" => "butter" }</pre></p>
       <p>The hash array collects each object, not according to a numerical index, but rather according to the objects themselves. Therefore, to access an object in the array, I simply call the object by its name, not by it integer position. Like the containers in my studio apartment, arrays and hashes serve different, but equally useful purposes – helping to bring order and structure to the world around us.</p>
 
