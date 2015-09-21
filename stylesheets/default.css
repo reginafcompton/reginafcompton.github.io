@@ -17,13 +17,21 @@ header {
 header li {
   float: left;
   list-style: none;
-  margin: 1.5em .8em 1em .8em;
-  padding: .2em;
-  border: .12em solid #FFFFFF;
+  margin: 1.5em 0em 1em 0em;
+  /*border: .12em solid #FFFFFF;*/
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.2em;
   font-weight: bold;
   color: #FFFFFF;
+}
+
+header li:after {
+    content: "\2022";
+    font-size: 1em;
+    padding: 0em .9em 0em .9em;
+}
+header li:last-child:after {
+    content: "";
 }
 
 header a:link {
@@ -81,6 +89,7 @@ margin: 0em 2em 0em 2em;
 
 main nav ul {
   padding-top: .5em;
+  display: block;
 }
 
 main nav li {
@@ -105,11 +114,12 @@ main nav li {
   margin-bottom: 2%;
   margin-top: 2%;
 }
+
 .social li {
-  text-align: center;
-  list-style: none;
   float: left;
-  margin: .5em .8em .5em .8em;
+  list-style: none;
+  margin: .5em .3em .5em .3em;
+  padding-left: .9em;
 }
 
 footer {
