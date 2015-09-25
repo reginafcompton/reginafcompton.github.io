@@ -23,6 +23,55 @@
   </header>
   <main class="row">
     <div class="text span-8">
+      <h1>Let us dance: Understanding Classes through Musical Metaphor<h1>
+      <h4>Posted on September 25, 2015</h4>
+      <p>This week, the <a href="http://cso.org/" target="_blank">Chicago Symphony Orchestra</a> – at the beginning of its 2015-2016 season – performs <em>Bolero</em> (1928) by Maurice Ravel. <em>Bolero</em> is pure excitement. The piece consists of a single melody – a breathless, sensual, dance tune, performed by soloists, who showcase the coloristic effects of their instruments (e.g., flute, Bb and Eb clarinet, bassoon, oboe, trumpet – indeed, even the saxophone). With each instance of the melody, the piece grows in intensity, until its explosive, somewhat disorderly finale.</p>
+      <p>Ravel's dance tune provides a meaningful analog to Ruby classes. A class is a "blueprint" or model for an idea. The <em>Bolero</em> melody can be understood as such a blueprint; each solo performance of it occurs as an "instance" of this blueprint. The solos vary, in terms of instrument (flute? oboe? saxophone?) and volume (let's say, on a scale of 1 to 10, with ten being the loudest). The Ruby class holds these attributes in instance variables – distinctly preceded with an "@." However, instance variables cannot appear outside of the class itself without a method that uses the variable. In other words, a separate, stand alone method gives power to an instance variable, as in this example:
+      <pre>class Bolero
+
+    def initialize(instrument, volume)
+        @instrument = instrument
+      if volume <= 10 && volume >= 0
+        @volume = volume
+      else
+        raise ArgumentError
+      end
+    end
+
+    def instrument
+      p @instrument
+    end
+
+    def volume
+      p @volume
+    end
+
+end</pre>
+<pre>solo_1 = Bolero.new("flute", 2)
+
+solo_1.instrument
+  => "flute"
+
+solo_1.volume
+  => 2</pre></p>
+      <p>Making such methods can be tiresome, however. Ruby fortunately has "reader" and "writer" methods, which allow instance variables to live outside the class, but without the hassle of generating a unique method for each variable. The attr_reader method returns the variable without changing it; the attr_writer method deems the variable mutable, allowing it to be changed, though not read. Further, the attr_accessor method makes variables both "readable" and "writable."
+      <pre>class Bolero
+    attr_accessor(:instrument, :volume)
+
+    def initialize(instrument, volume)
+        @instrument = instrument
+      if volume <= 10 && volume >= 0
+        @volume = volume
+      else
+        raise ArgumentError
+      end
+    end
+
+end</pre></p>
+      <p>Classes can encapsulate many more instance variables, sometimes very sophisticated ones that behave in weird and complex ways. With greater complexity comes greater frustration, thrills, and possibilities, offering us a reason to dance.</p>
+
+      <div class="line"></div>
+
       <h1>Nutritious Innumerable Universe<h1>
       <h4>Posted on September 19, 2015</h4>
       <p>My last post explored the differences and similarities between two types of containers: arrays (lists of objects ordered numerically) and hashes (lists of objects organized into key-value pairs). Hashes and arrays bring order to our disorganized, complex, troubling, exhilarating, confusing, beautiful universe. Nonetheless, the full organizational potential of hashes and arrays exists not in the containers themselves, but in the myriad ways we can access and manipulate them.</p>
