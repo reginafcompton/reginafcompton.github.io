@@ -13,10 +13,10 @@
     <div class="subtitle">a cheat sheet for phase 0 students</div>
   </header>
   <article>
-    <h2>RANDOM NUMBERS</h2>
+    <p>This "cheat sheet" contains brief summaries of several Ruby and JavaScript details – namely, those tiny, little things that do not easily stick in one's head. More updates to come!</p>
+    <h2>Random Numbers</h2>
     <p class="subheader">Ruby</p>
-    <pre>Puts rand(101)
-
+    <p><pre>Puts rand(101)
 => prints an integer from 0 to 100</pre></p>
     <p class="subheader">JavaScript
     <pre>var randNum = Math.random()
@@ -28,6 +28,35 @@ console.log(randNum)</pre></p>
     <p>This operation generates a number between 0 and 1, then multiplies that number by 101.  Alternatively, the below operation generates an integer.
     <pre>var randNum = Math.floor(Math.random() * 101)
 console.log(randNum)</pre></p>
+
+  <h2>Minimum and &nbsp; Maximum Numbers
+</h2>
+  <p class="subheader">Ruby</p>
+  <p>The following operations will return the smallest or largest number of the array.
+  <pre>p [4, 5, 3, 22, 1].min
+=> 1</pre></p>
+  <p><pre>p [4, 5, 3, 22, 1].max
+=> 22</pre></p>
+
+  <p class="subheader">JavaScript</p>
+  <p><pre>console.log(Math.min(3, 5, 9, 0, 66, 1))
+=> 0</pre></p>
+  <p><pre>console.log(Math.max(3, 5, 9, 0, 66, 1))
+=> 66</pre></p>
+
+  <h2>Sorting</h2>
+  <p class="subheader">Ruby</p>
+  <p>The following returns the array sorted in ascending order.</p>
+  <p><pre>puts [3, 5, 2, 1, 9].sort
+=> [1, 2, 3, 5, 9]</pre></p>
+
+  <p class="subheader">JavaScript</p>
+  <p>The JavaScript sort function can be modified to fit the needs of the program, e.g., an ascending or descending sort method.</p>
+  <p><pre>function sortAscending (a, b) {
+  return a – b;
+}</pre></p>
+  <p><pre>[3, 5, 2, 1, 9].sort(sortAscending)
+=> [1, 2, 3, 5, 9]</pre></p>
 
   </article>
   <footer>
