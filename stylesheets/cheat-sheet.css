@@ -32,12 +32,19 @@ article {
   color: #312E2C;
   font-family: 'Slabo 27px', serif;
   margin: 0;
-  padding: 1em 6em 8em 6em;
+  padding: 1em 6em 7em 6em;
+}
+
+article h2 {
+  font-family:'Mr De Haviland', cursive;
+  font-size: 1.8em;
+  margin: 0;
 }
 
 article .subheader {
   font-weight: bold;
   font-size: 1.2em;
+  margin: 0.5em;
 }
 
 footer {
