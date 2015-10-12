@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+}
+
+header .title {
+  background-color: #995BB4;
+  color: #DCBCEA;
+  margin: 0;
+  padding: 0.2em 0em 0em 0em;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Slabo 27px', serif;
+/*  font-weight: bold;*/
+}
+
+header .subtitle {
+  background-color: #995BB4;
+  color: #312E2C;
+  margin: 0;
+  padding: 0.1em 0em 0.1em 0em;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 2.5em;
+  font-family:'Mr De Haviland', cursive;
+}
+
+article {
+  background-color: #E6E6E6;
+  color: #312E2C;
+  font-family: 'Slabo 27px', serif;
+  margin: 0;
+  padding: 1em 6em 8em 6em;
+}
+
+article .subheader {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+footer {
+  position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .copyright {
+  background-color: #C2EE72;
+  color: #70358A;
+  text-align: center;
+  padding: 1.2em 0em 1.2em 0em;
+  margin: 0;
+  font-family: 'Slabo 27px', serif;
+}
+
+pre {
+    background: #DACFDF;
+    border: 1px solid #dedee3;
+    padding: .5em;
+    font-size: 1.2em;
+  }
