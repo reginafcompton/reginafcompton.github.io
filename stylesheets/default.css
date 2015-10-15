@@ -1,25 +1,25 @@
 header {
   background-color: #33547E;
   position: fixed;
-  opacity: 0.9;
 }
 
 .logo {
   float: left;
-  margin-left: .5em;
+  padding-left: 0.5em;
   font-family: 'Monsieur La Doulaise', cursive;
   font-size: 3.5em;
   color: white;
 }
 .nav {
-  float: right;
+  float: left;
   text-align: center;
+  padding-left: 3.5em;
 }
 
 header li {
   float: left;
   list-style: none;
-  margin: 1.8em 0em 1em 0em;
+  padding: 1.8em 1.2em 1em 1.2em;
   /*border: .12em solid #FFFFFF;*/
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.1em;
@@ -27,13 +27,13 @@ header li {
   color: #FFFFFF;
 }
 
-header li:after {
+/*header li:after {
     content: "\2022";
     font-size: 1em;
     padding: 0em .6em 0em .6em;
-}
-header li:last-child:after {
-    content: "";
+}*/
+header li:first-child {
+    padding-left: 4em;
 }
 
 header a:link {
@@ -127,8 +127,8 @@ main nav li {
 .social li {
   float: left;
   list-style: none;
-  margin: .5em .3em .5em .3em;
-  padding-left: .9em;
+  /*margin: .5em .3em .5em .3em;*/
+  /*padding: .5em .3em .5em .3em;*/
 }
 
 footer {
@@ -141,11 +141,11 @@ footer {
 
 /* reusable code */
 
-a {
+a, .toggle {
   color: #023F8E;
   text-decoration: none;
 }
-a:hover {
+a:hover, .toggle:hover {
   color: #94ACCC;
 }
 
@@ -155,18 +155,6 @@ a:hover {
   display: block;
 }
 
-
-hr {
-    display: block;
-    -webkit-margin-before: 1.5em;
-    -webkit-margin-after: 0em;
-    -webkit-margin-start: auto;
-    -webkit-margin-end: auto;
-    border-style: inset;
-    border-width: 1px;
-    box-sizing: border-box;
-}
-
 pre {
     background: #f3f3f7;
     border: 1px solid #dedee3;
@@ -174,18 +162,23 @@ pre {
     font-size: 1.2em;
   }
 
-/* dev ideas from normalize.css */
-
-body {
-  margin: 0;
-}
-
 
 /* dev ideas from J. Ky Marsh */
 
 .debug {
     border: 1px solid violet;
 }
+
+ul, ol {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+  }
+
+
+/* Surplus code */
 
 .row {
     padding: 0;
@@ -195,23 +188,13 @@ body {
     float: left;
 }
 
-.span-1 {  width: 8.333%; }
-.span-2 {  width: 16.666%; }
-.span-3 {  width: 25%; }
-.span-4 {  width: 33.333%; }
-.span-5 {  width: 41.666%; }
-.span-6 {  width: 50%; }
-.span-7 {  width: 58.333%; }
-.span-8 {  width: 66.666%; }
-.span-9 {  width: 75%; }
-.span-10 { width: 83.333%; }
-.span-11 { width: 91.666%; }
-.span-12 { width: 100%; }
-
-ul, ol {
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-    -webkit-padding-start: 0;
-  }
+/*hr {
+    display: block;
+    -webkit-margin-before: 1.5em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    border-style: inset;
+    border-width: 1px;
+    box-sizing: border-box;
+}*/
