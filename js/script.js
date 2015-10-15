@@ -44,5 +44,29 @@ $(document).ready(function() {
     $(".panel-4").slideToggle("fast");
     $(".show-more-4").fadeIn("fast");
   });
+
+  $("#tab-1").mouseenter(function() {
+    $(this).css( "background-color", "#143259");
+  });
+
+  $("#tab-2").mouseenter(function() {
+    $(this).css( "background-color", "#758396");
+  });
+
+  $("#tab-3").mouseenter(function() {
+    $(this).css( "background-color", "#102C4F");
+  });
+
+  $("#tab-4").mouseenter(function() {
+    $(this).css( "background-color", "#4A6C98");
+  });
+
+  $("#tab-5").mouseenter(function() {
+    $(this).css( "background-color", "#89868E");
+  });
+
+  $("#tab-1, #tab-2, #tab-3, #tab-4, #tab-5").mouseleave(function() {
+    $(this).css("background-color", "#33547E");
+  });
 });
 
