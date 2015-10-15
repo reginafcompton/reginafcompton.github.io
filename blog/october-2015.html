@@ -5,14 +5,17 @@
   <title>Before the Sn@il</title>
   <link href='https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/trg.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
 </head>
 
 <body>
   <header class="row">
-    <div class="logo">Before the Sn@il</div>
-    <div class="nav">
+    <div class="logo col span-6-t">Before the Sn@il</div>
+    <div class="nav col span-6-t">
       <ul>
         <li><a href="../index.html">home</a></li>
         <li><a href="../about.html">about Regina</a></li>
@@ -27,7 +30,8 @@
       <h1>Expressive Regular Expressions<h1>
       <h4>Posted on October 8, 2015</h4>
       <p>George Frideric Handel (1685-1759) wrote operas. Or in other words, he set poetic texts to music, bringing to life narratives about queens and kings, husbands and jilted wives, and victorious, if lovestruck military leaders. The poetic texts (i.e., librettos) contain a slew of clever devices: alliteration, anaphora, internal rhyme, etc. The librettos also include instances of meaningful word repetition. Most interestingly, the repetition of a word or phrase does not occur immediately, e.g., a character makes a statement and, several scenes later, the character, with added emphasis, repeats it.</p>
-      <p>These poetic moments of text repetition can be hard to identify. Happily, Ruby can help. Ruby has a "regular expression" operator. A regular expression (Regexp) presents a snippet of text, numbers, or other such characters. It compares this snippet against a string, checking to see if the snippet exists.</p>
+      <p class="show-more-2 toggle">...show more...</p>
+      <div class="panel-2"><p>These poetic moments of text repetition can be hard to identify. Happily, Ruby can help. Ruby has a "regular expression" operator. A regular expression (Regexp) presents a snippet of text, numbers, or other such characters. It compares this snippet against a string, checking to see if the snippet exists.</p>
       <p>Ruby contains a variety of notations for Regexp. Let's say, I want to search for the word "figlio" in the first line of an aria. I can write a code like this:
       <pre>/figlio/ =~ "Vieni, o figlio, e mi consola"</pre></p>
       <p>The backslashes enclose the Regexp, and the =~ operator checks the text snippet against the string. If the snippet occurs, then Ruby returns its index number (in this example, the index 9). If the snippet does not occur, then Ruby returns nil. Conveniently, the order of things does not matter. The following works just the same:
@@ -36,13 +40,15 @@
       <pre>/figlio/.match("Vieni, o figlio, e mi consola")</pre></p>
       <p>With the .match method, Ruby literally checks for "matches" of the text snippet within the given string. If it occurs, then Ruby returns a MatchData object, verifying the existence of the Regexp.</p>
       <p>Regexp can search for broader swaths of information. For instance, I may want to search for numbers within a text. To do so, I can use a bracket expression: /[[:digit:]]/. Alternatively, I might want to search for letters within a string of numbers: /[[:alpha:]]/. Indeed, Ruby presents several "bracket expressions," as summarized <a href="http://ruby-doc.org/core-2.1.1/Regexp.html" target="_blank">here</a>. Ruby thus helps us appreciate the expressive, sometimes fascinating occurrence of patterns (in opera or elsewhere) that might otherwise pass by unnoticed. And that's something to sing about.</p>
+      <p class="show-less-2 toggle">...show less...</p></div>
 
       <div class="line"></div>
 
       <h1>Breathe, Code, Repeat<h1>
       <h4>Posted on October 3, 2015</h4>
       <p>I like free things, especially during this temporary state of non-employment. And since arriving in Chicago, I have attended, or more frankly, taken shameless advantage of free, try-us-out-before-you-buy-a-membership-even-if-you-have-no-intention-of-doing-so yoga at two studios (six classes total, six different instructors). Until last week, I did not fully appreciate the great variety in "yogi" practices. Yoga entails the mindful repetition of postures in sequence, which balance the body, regulate breath, and create mental focus. Though motivated by the same end goal, yoga instructors, as I now know, cultivate their own sequences of repetition – using modified postures and personalized extensions, performed at different speeds to select music (or, sometimes, no music at all).</p>
-      <p>A program running on JavaScript or Ruby can simulate yoga cycles. These languages provide a way to construct loops, though – like two yoga instructors residing on opposite ends of Chicago – the syntax of repetition varies. The WHILE (Ruby) and FOR (JavaScript) loops provide examples. Such loops tell the computer to repeat something, as a certain condition holds true. In Ruby, a WHILE loop looks like this:
+      <p class="show-more-1 toggle">...show more...</p>
+      <div class="panel-1"><p>A program running on JavaScript or Ruby can simulate yoga cycles. These languages provide a way to construct loops, though – like two yoga instructors residing on opposite ends of Chicago – the syntax of repetition varies. The WHILE (Ruby) and FOR (JavaScript) loops provide examples. Such loops tell the computer to repeat something, as a certain condition holds true. In Ruby, a WHILE loop looks like this:
       <pre>cycle_num = 1
 
 while cycle_num <= 6
@@ -62,7 +68,7 @@ You are doing 4 of 6 horse poses.
 You are doing 5 of 6 horse poses.
 You are doing 6 of 6 horse poses.</pre></p>
      <p>Regardless of the language, you can attain the same programming goals (at least with fundamental problems), just as you can achieve similar fitness, flexibilty, and mental goals with any yoga teacher, in any city, at any cost.</p>
-
+     <p class="show-less-1 toggle">...show less...</p></div>
     <nav>
       <h1>Archives</h1>
       <div class="line"></div>

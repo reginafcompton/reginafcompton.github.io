@@ -5,14 +5,17 @@
   <title>Before the Sn@il</title>
   <link href='https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css" />
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/trg.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
 </head>
 
 <body>
   <header class="row">
-    <div class="logo">Before the Sn@il</div>
-    <div class="nav">
+    <div class="logo col span-6-t">Before the Sn@il</div>
+    <div class="nav col span-6-t">
       <ul>
         <li><a href="../index.html">home</a></li>
         <li><a href="../about.html">about Regina</a></li>
@@ -27,7 +30,8 @@
       <h1>Github, Git commands, and the happiest place on Earth</h1>
       <h4>Posted on August 22, 2015</h4>
       <p>Github, to the new user, seems just shy of witchcraft. It is pure, terrifying, beautiful magic. Still, the enchanting world of Github can seem less like Walt Disney's fairy-tale land and more like Banksy's disturbing <a href="http://www.theguardian.com/artanddesign/2015/aug/20/banksy-dismaland-amusements-anarchism-weston-super-mare" target="_blank">Dismaland</a>. This week, I personally saw the less whimsical side of Github. I know now that certain types of user errors can easily transplant you from Cinderella's castle to the Grim Reaper's dungeon.</p>
-      <p>I begin with some basics. Git and Github help developers manage their work. Simply put, Git – a software – tracks changes made to files on local machines. Developers save, share, modify, and use these files in remote repositories on the social website Github. In other words, Git lives on your computer, whereas Github exists in a distant land: the Internet. Like I said, pure magic.</p>
+      <p class="show-more-2 toggle">...show more...</p>
+      <div class="panel-2"><p>I begin with some basics. Git and Github help developers manage their work. Simply put, Git – a software – tracks changes made to files on local machines. Developers save, share, modify, and use these files in remote repositories on the social website Github. In other words, Git lives on your computer, whereas Github exists in a distant land: the Internet. Like I said, pure magic.</p>
       <p>Moving a file from a local computer to a remote environment entails several steps, or Git commands, which can be categorized into two large actions: commit and push/pull. The road to commitment, so to speak, requires at the very least the following commands:</p>
       <strong><p><pre>$git checkout -b [newbranch]</pre></p>
       <p><pre>$git status</pre></p>
@@ -35,14 +39,17 @@
       <p><pre>$git commmit -m "[commit message]."</pre></p></strong>
       <p>(Read more about these commands <a href="http://readwrite.com/2013/10/02/github-for-beginners-part-2" target="_blank">here</a>.)</p>
       <p>A successful commit in Git is no small task. However, "pull" and "push" require even greater focused concentration. After a commit, the file must be "pushed" to Github. Before doing so, compare the local and remote repositories, checking that they hold the same content. The commands for this process include <strong>$git checkout master</strong>, which moves you off your current live branch, and, if needed, <strong>$git pull</strong>, which fetches the changes in your remote repository (i.e., the one on Github) and merges them with your local one. Next, return to the active branch and push commits to Github, using this simple command: <strong>$git push origin [branchname]</strong>. After which, visit Github to find a pull request ready for action. (The physicality of the language makes these directives all the more vivid: Git pushes, and Github pulls.) Finally, complete the pull request, delete your branch (in Github and Git), and make a final pull request in your terminal. In this concluding step, changes in Github are pulled onto the local master branch, insuring that the files on your computer do not disappear. Taking such steps can determine the difference between "happily ever after" and the death of Snow White and six of the seven dwarfs. </p>
+      <p class="show-less-2 toggle">...show less...</p></div>
       <div class="line"></div>
       <h1>Lady Compton's Lover</h1>
       <h4>Posted on August 21, 2015</h4>
       <blockquote>“[O]nce you start the mental life you pluck the apple. You’ve severed the connexion between the apple and the tree: the organic connexion. And if you’ve got nothing in your life but the mental life, then you yourself are a plucked apple . . . you’ve fallen off the tree.” Tommy Dukes in <em>Lady Chatterley’s Lover</em> by D.H. Lawrence</blockquote>
       <p> D.H. Lawrence published <em>Lady Chatterley’s Lover</em> in 1928. The novel features Constance Chatterley, an aristocratic but despairing housewife, who comes to challenge a societal assumption: pursuits of human intellect have nothing to do with primal passion, emotion, or human urges. Great thinkers are “apples” plucked from an organic life source, as her husband’s colleague Tommy Dukes explains during a circular evening conversation with like-minded peers at Wragby, the Chatterley estate.</p>
-      <p>I am an Academic, a scholar, a recipient of many (too many) degrees. For me, the Academy came to seem very much like the living room of Lady Chatterley, wherein beautiful minds discussed global and also local issues, some important, some trivial. As it were, this “living room” of scholars can feel suffocating or dishonest. It obeys so many rules of decorum, imposes unrealistic publishing expectations, and adheres to teaching guidelines dictated by administrators – the sort of things that hinder passionate, creative work.</p>
+      <p class="show-more-1 toggle">...show more...</p>
+      <div class="panel-1"><p>I am an Academic, a scholar, a recipient of many (too many) degrees. For me, the Academy came to seem very much like the living room of Lady Chatterley, wherein beautiful minds discussed global and also local issues, some important, some trivial. As it were, this “living room” of scholars can feel suffocating or dishonest. It obeys so many rules of decorum, imposes unrealistic publishing expectations, and adheres to teaching guidelines dictated by administrators – the sort of things that hinder passionate, creative work.</p>
       <p>Lady Chatterley eventually takes a lover and learns to regard her instincts as tightly linked to her mental ability. She opens herself to new physical feelings (sexy, sexy times, of course!), and also she acquires a refreshingly different worldview. At the end of Phase 0, Week 1 of Dev Bootcamp, I feel like Lady Chatterley must have felt as she departed from Wragby. I feel alive, ready to explore new things and experiment with ideas. I am not afraid of making messes. I am not afraid of intangible milestones.</p>
       <p>And still, I do fear my inherent self: I have been trained to work slowly, to think things through at a snail’s pace. I think I will likely struggle to work quickly (though that seems to be a mantra here at Dev Bootcamp). I need to buy some cherry tomatoes, some smaller "<a href="http://pomodorotechnique.com/" target="_blank">timeboxes</a>," I suppose. What I do know, at the very least: Dev Bootcamp celebrates the connection between the “apple and the tree,” something that I find comforting, motivating, and worth waking up for.</p>
+      <p class="show-less-1 toggle">...show less...</p></div>
 
     <nav>
       <h1>Archives</h1>
