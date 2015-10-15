@@ -19,7 +19,8 @@ header {
 header li {
   float: left;
   list-style: none;
-  padding: 1.8em 1.2em 1em 1.2em;
+  margin: 0.9em 0.2em 0.2em 0.2em;
+  padding: 0.8em 0.8em 0.8em 0.8em;
   /*border: .12em solid #FFFFFF;*/
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.1em;
@@ -33,7 +34,7 @@ header li {
     padding: 0em .6em 0em .6em;
 }*/
 header li:first-child {
-    padding-left: 4em;
+    margin-left: 3em;
 }
 
 header a:link {
@@ -45,9 +46,9 @@ header a:visited {
   color: #FFFFFF;
 }
 
-header a:hover {
+/*header a:hover {
   color: #94ACCC;
-}
+}*/
 
 main {
   clear: both;
@@ -162,6 +163,12 @@ pre {
     font-size: 1.2em;
   }
 
+.status-1 {
+  background-color: red;
+}
+.status-2 {
+  background-color: purple;
+}
 
 /* dev ideas from J. Ky Marsh */
 
