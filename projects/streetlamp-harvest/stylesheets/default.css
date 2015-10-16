@@ -1,11 +1,42 @@
 .debug {
-  border: 1px solid violet;
+  border: 0px solid violet;
 }
 
 .img { background-image: url("../imgs/header_img.JPG"); }
 
-.p-xxl { padding: 8em; }
+ul, ol, h1, h3 {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+/*Atomic: every CSS class should have one rule; every CSS class should be an abbreviation (from Emmet).*/
 
-.bgc-cool { background-color: blue; }
 
-.fz-xxl { font-size: 16em; }
+/*p-sm
+.p-std
+.p-lg*/
+.p-xxs { padding: 0.5em; }
+.p-xs { padding: 1em}
+.p-sm { padding: 1.5em; }
+.p-xl { padding: 5em; }
+.p-sm-b { padding-bottom: 1.5em; }
+
+.bgc-night { background-color: #674d62; }
+.bgc-day { background-color: #D6BED1;}
+.t-ivory { color: #FDFCFC; }
+
+.fl-l { float: left;}
+.fl-r { float: right;}
+
+.lis-n { list-style: none;}
+
+.ta-c {text-align: center;}
+
+.f-fun { font-family: 'Amatic SC', cursive;}
+.f-std { font-family: 'Poiret One', cursive; }
+
+.fz-std { font-size: 1.2em; }
+.fz-lg { font-size: 1.6em; }
+.fz-xxl { font-size: 7.5em; }
