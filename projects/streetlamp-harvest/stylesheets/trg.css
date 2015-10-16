@@ -19,6 +19,10 @@
 /*
     https://css-tricks.com/snippets/css/clear-fix/
 */
+/*
+Gives the container content, so it does not collapse.
+*/
+
 .container:after,
 .row:after,
 .col:after {
