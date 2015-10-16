@@ -1,3 +1,11 @@
-body {
-  background-color: purple;
+.debug {
+  border: 1px solid violet;
 }
+
+.img { background-image: url("../imgs/header_img.JPG"); }
+
+.p-xxl { padding: 8em; }
+
+.bgc-cool { background-color: blue; }
+
+.fz-xxl { font-size: 16em; }
