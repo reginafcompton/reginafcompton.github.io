@@ -1,6 +1,11 @@
 $(document).ready(function() {
   $(".panel-1, .panel-2, .panel-3, .panel-4").hide();
 
+  // $(".more").click(
+  //     function() {
+  //       $(this).find("div").slideToggle("fast");
+  //     });
+
   $(".show-more-1").click(function() {
     $(this).fadeOut("fast");
     $(".panel-1").slideToggle("fast");
@@ -68,5 +73,6 @@ $(document).ready(function() {
   $("#tab-1, #tab-2, #tab-3, #tab-4, #tab-5").mouseleave(function() {
     $(this).css("background-color", "#33547E");
   });
+
 });
 
