@@ -1,10 +1,51 @@
+.img { background-image: url("../imgs/header_img.JPG"); }
+
+header a {
+  color: #FDFCFC;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: gray;
+}
+/*Atomic: every CSS class should have one rule; every CSS class should be an abbreviation (from Emmet).*/
+
+/*Padding Classes*/
+.p-xxs { padding: 0.5em; }
+.p-xs { padding: 1em}
+.p-sm { padding: 1.5em; }
+.p-xl { padding: 4.8em; }
+.p-sm-b { padding-bottom: 1.5em; }
+.p-sm-t { padding-top: 0.4em; }
+
+/*Text Style Classes*/
+.f-fun { font-family: 'Amatic SC', cursive;}
+.f-std { font-family: 'Poiret One', cursive; }
+
+.fz-sm { font-size: 1.2em; }
+.fz-std { font-size: 1.5em; }
+.fz-lg { font-size: 2em; }
+.fz-xxl { font-size: 6.5em; }
+
+.t-ivory { color: #FDFCFC; }
+
+.shadow { text-shadow: 2px 2px #674d62; }
+
+.lis-n { list-style: none;}
+
+.ta-c {text-align: center;}
+
+
+
+.bgc-night { background-color: #674d62; }
+.bgc-day { background-color: #D6BED1;}
+
+.fl-l { float: left;}
+.fl-r { float: right;}
+
 .debug {
   border: 0px solid violet;
 }
-
-.img { background-image: url("../imgs/header_img.JPG"); }
-
-.shadow { text-shadow: 2px 2px #674d62; }
 
 ul, ol, h1, h3 {
     -webkit-margin-before: 0;
@@ -13,32 +54,3 @@ ul, ol, h1, h3 {
     -webkit-margin-end: 0;
     -webkit-padding-start: 0;
 }
-/*Atomic: every CSS class should have one rule; every CSS class should be an abbreviation (from Emmet).*/
-
-
-/*p-sm
-.p-std
-.p-lg*/
-.p-xxs { padding: 0.5em; }
-.p-xs { padding: 1em}
-.p-sm { padding: 1.5em; }
-.p-xl { padding: 5em; }
-.p-sm-b { padding-bottom: 1.5em; }
-
-.bgc-night { background-color: #674d62; }
-.bgc-day { background-color: #D6BED1;}
-.t-ivory { color: #FDFCFC; }
-
-.fl-l { float: left;}
-.fl-r { float: right;}
-
-.lis-n { list-style: none;}
-
-.ta-c {text-align: center;}
-
-.f-fun { font-family: 'Amatic SC', cursive;}
-.f-std { font-family: 'Poiret One', cursive; }
-
-.fz-std { font-size: 1.2em; }
-.fz-lg { font-size: 1.6em; }
-.fz-xxl { font-size: 7.5em; }
